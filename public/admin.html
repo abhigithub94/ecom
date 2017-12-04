@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Admin</title>
+	<link rel="stylesheet" type="text/css" href="css/admin.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  	<link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<section class="adminsec1">
+	<div class="row">
+		<div class="col-md-12">
+			<div class="col-md-2">
+				<h1>Admin Panel</h1>
+			</div>
+			<div class="col-md-10">
+				<ul>
+					<li class="l1"><i class="fa fa-bars"></i></li>
+					<li class="l2"><div><img src="images/b2-1.jpg"></div></li>
+					<li class="l3">AdminName</li>
+				</ul>
+			</div>
+
+		</div>
+	</div>
+</section>
+<section class="adminsec2">
+	<div class="row">
+		<div class="col-md-12">
+			<div class="col-md-2">
+				<div class="col-md-12 inner">
+					<div class="col-md-4 inner">
+						<img src="images/b2-2.jpg">
+					</div>
+					<div class="col-md-8 inner">
+						<h4>Admin name</h4>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-10">
+				<div class="textarea">
+					<div class="col-md-12 login">
+						<div class="col-md-12 head">
+							<h3>Upload Products and Information..</h3>
+						</div>
+						<form ref='uploadForm' id='uploadForm' action='http://localhost:9999/upload_link' method='post' encType="multipart/form-data">
+
+							<div class="col-md-12 part2">
+								<div class="form-group">
+							      	<label for="sel1">Product list (select one):</label>
+							      		<select class="form-control" id="sel1" name ="productlist">
+							        		<option>T-Shirt</option>
+							        		<option>Jeans</option>
+							        		<option>Undergarments</option>
+							      		</select>
+							  	</div>
+							</div>
+							<div class="col-md-12 part3">
+								
+								    <label class="radio-inline">
+								      	<input type="radio" name="gender" ng-value="'Male'">Male
+								    </label>
+								    <label class="radio-inline">
+								      	<input type="radio" name="gender" ng-value="'Female'">Female
+								    </label>
+								
+							</div>
+							<div class="col-md-12 part3-1">
+								<p style="font-weight: 600;">Select particular size:</p>
+							  	
+								    <label class="checkbox-inline">
+								      	<input type="checkbox" name="size28" value="28">28
+								    </label>
+								    <label class="checkbox-inline">
+								      	<input type="checkbox" name="size32" value="32">32
+								    </label>
+								    <label class="checkbox-inline">
+								      	<input type="checkbox" name="size34" value="34">34
+								    </label>
+								    <label class="checkbox-inline">
+								      	<input type="checkbox" name="size36" value="36">36
+								    </label>
+							  	
+							</div>
+							<div class="col-md-12 part3-1">
+								<input type="text" class="form-control" placeholder="type specific keyword to this product." name="keyword">
+							</div>
+							<div class="col-md-12 part3-1">
+								<textarea class="form-control" placeholder="Description related product" name="description"></textarea>
+							</div>
+							<div class="col-md-12 part3-1">
+								<input type="text" class="form-control" placeholder="Price per piece" name="price">
+							</div>
+							<div class="col-md-12 part3-1">
+								<input type="text" class="form-control" placeholder="quantiy" name="quantity">
+							</div>
+							<div class="col-md-12 part4">
+								<label>Upload Image Samples:</label>
+							</div>
+							
+							
+
+								<div class="col-md-12 part5">
+									<input type="file" class="form-control" name="upimage1" >
+								</div>
+								<div class="col-md-12 part6">
+									<input type="file" class="form-control" name="upimage2" >
+								</div>
+								<div class="col-md-12 part7">
+									<input type="file" class="form-control" name="upimage3" >
+								</div>
+								<div class="col-md-12 part8">
+									<input type="file" class="form-control"  name="upimage4">
+								</div>
+								<div class="col-md-12 part9">
+									<input type="file" class="form-control"  name="upimage5">
+								</div>
+								<div class="col-md-12 part10">
+									
+								</div>
+								
+								<input type='submit' value="Upload">
+						</form>
+						<div><button class="btn btn-primary" ng-click="logout()">logout</button></div>
+		
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+</body>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+</html>

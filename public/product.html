@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Product</title>
+	<link rel="stylesheet" type="text/css" href="css/product.css">
+  	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  	<link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<section class="headercontact">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="col-md-6">
+				</div>
+				<div class="col-md-6">
+					<div class="col-md-12">	
+						<div class="col-md-6 p1">					
+							<span class="fa fa-envelope" style="color: rgb(243, 255, 233);"></span><span class="email">NAB@100.in</span>
+						</div>
+						<div class="col-md-6 p2">					
+							<span class="fa fa-phone" style="color: rgb(243, 255, 233);"></span><span class="mob">67878768768</span>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="headernavbar" >
+		<div class="row" data-spy="affix" data-offset-top="197">
+			<div class="col-md-12">
+				<div class="col-md-2">
+					<ul style="display: flex; padding-left: 2%;">
+						<li style="list-style: none; margin: auto;"><img src="images/logo.png"></li>
+						<li style="list-style: none; margin: auto;"><h3 style="font-weight: bold;">NAB100</h3></span></li>
+					</ul>
+				</div>		
+				<div class="col-md-5">
+					<nav>
+						<ul>
+							<li><a href="#/!">Home</a></li>
+							<li><a href="">About Us</a></li>
+							<li><a href="#!product">Mens</a></li>
+							<li><a href="">Woman</a></li>
+						</ul>
+					</nav>
+				</div>	
+				<div class="col-md-5">
+					<div class="col-md-8">
+						<div class="input-group">
+						    <input type="text" class="form-control" placeholder="Search" ng-model="search">
+						    <div class="input-group-btn">
+						        <button class="btn btn-default" type="submit">
+						        	<i class="glyphicon glyphicon-search"></i>
+						        </button>
+						    </div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<a href="">
+							<div class="cartbox">
+								<i class="fa fa-shopping-cart fa-2x"></i>
+								<div class="badge">5</div>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="secprod3">
+		<div class="row">
+			<div class="col-md-12 main">
+				<div class="col-md-3 left">
+					<div class="col-md-12" data-spy="affix">
+						<h5>PRICE</h5>
+						<div class="Pricecheckbox">
+	      					<label><input type="checkbox" value="" class="check0" ng-model="range0" ng-change="r0()">All Product</label>
+	    				</div>
+						<div class="Pricecheckbox">
+	      					<label><input type="checkbox" value="" class="check1" ng-model="range1" ng-change="r1()">Rs. 150 to Rs. 349</label>
+	    				</div>
+	    				<div class="Pricecheckbox">
+	      					<label><input type="checkbox" value="" class="check2" ng-model="range2" ng-change="r2()">Rs. 350 to Rs. 549</label>
+	    				</div>
+	    				<div class="Pricecheckbox">
+	      					<label><input type="checkbox" value="" class="check3" ng-model="range3" ng-change="r3()">Rs. 550 to Rs. 749 </label>
+	    				</div>
+	    				<div class="Pricecheckbox">
+	      					<label><input type="checkbox" value="" class="check4" ng-model="range4" ng-change="r4()">Rs. 750 to Rs. 949</label>
+	    				</div>
+	    				<div class="Pricecheckbox">
+	      					<label><input type="checkbox" value="" class="check4" ng-model="range5" ng-change="r5()">Rs. 950 and Above</label>
+	    				</div>
+	    				<hr style="width: 16%; position: absolute; left: 15px;">
+
+	    				<h5 style="padding-top: 2%;">DISCOUNT</h5>
+						<div class="Discountradio">
+      						<label><input type="radio" name="optradio" class="rad1">60% Discount</label>
+    					</div>
+    					<div class="Discountradio">
+     						<label><input type="radio" name="optradio" class="rad2">40% Discount</label>
+    					</div>
+    					<div class="Discountradio">
+      						<label><input type="radio" name="optradio" class="rad3">20% Discount</label>
+    					</div>
+    					<div class="Discountradio">
+      						<label><input type="radio" name="optradio" class="rad4">10% Discount</label>
+    					</div>
+	    				<hr style="width: 16%; position: absolute; left: 15px;">
+    				</div>
+				</div>
+				<div class="col-md-9 right">
+					<span class="prodname" style="color: #5bb300;"><label>Mens</label></span><span class="prodlength"><label>{{productlist}}</label></span>
+					<hr>
+					<div class="col-md-12 imagepart">
+						<div class="col-md-3 img1" ng-repeat="x in alldata |filter:search" ng-hide="all">
+							<a href="" ng-click="imagedetail(x)"><img src="upload/{{x.image1}}">
+							<div class="brandname">
+							<label>NAB100</label>
+							
+							</div>
+							<div class="productname">
+							<label>{{x.productlist}}</label><label style="padding-left: 6%;">{{x.keyword }}</label>
+							</div>
+							<div>
+							<label>Rs.</label><label>{{x.price}}</label>
+							</div></a>
+						</div>
+						<div class="col-md-3 img1" ng-repeat="x in rag1 |filter:search" ng-show="check1" ng-hide="check11">
+							<a href="" ng-click="imagedetail(x)"><img src="upload/{{x.image1}}">
+							<div class="brandname">
+							<label>NAB100</label>
+							</div>
+							<div class="productname">
+							<label>{{x.productlist}}</label><label style="padding-left: 6%;">{{x.keyword }}</label>
+							</div>
+							<div>
+							<label>Rs.</label><label>{{x.price}}</label>
+							</div></a>
+						</div>
+						<div class="col-md-3 img1" ng-repeat="x in rag2 |filter:search" ng-show="check2" ng-hide="check22">
+							<a href="" ng-click="imagedetail(x)"><img src="upload/{{x.image1}}">
+							<div class="brandname">
+							<label>NAB100</label>
+							</div>
+							<div class="productname">
+							<label>{{x.productlist}}</label><label style="padding-left: 6%;">{{x.keyword }}</label>
+							</div>
+							<div>
+							<label>Rs.</label><label>{{x.price}}</label>
+							</div></a>
+						</div>
+						<div class="col-md-3 img1" ng-repeat="x in rag3 |filter:search" ng-show="check3" ng-hide="check33">
+							<a href="" ng-click="imagedetail(x)"><img src="upload/{{x.image1}}">
+							<div class="brandname">
+							<label>NAB100</label>
+							</div>
+							<div class="productname">
+							<label>{{x.productlist}}</label><label style="padding-left: 6%;">{{x.keyword }}</label>
+							</div>
+							<div>
+							<label>Rs.</label><label>{{x.price}}</label>
+							</div></a>
+						</div>
+						<div class="col-md-3 img1" ng-repeat="x in rag4 |filter:search" ng-show="check4" ng-hide="check44">
+							<a href="" ng-click="imagedetail(x)"><img src="upload/{{x.image1}}">
+							<div class="brandname">
+							<label>NAB100</label>
+							</div>
+							<div class="productname">
+							<label>{{x.productlist}}</label><label style="padding-left: 6%;">{{x.keyword }}</label>
+							</div>
+							<div>
+							<label>Rs.</label><label>{{x.price}}</label>
+							</div></a>
+						</div>
+						<div class="col-md-3 img1" ng-repeat="x in rag5 |filter:search" ng-show="check5" ng-hide="check55">
+							<a href="" ng-click="imagedetail(x)"><img src="upload/{{x.image1}}">
+							<div class="brandname">
+							<label>NAB100</label>
+							</div>
+							<div class="productname">
+							<label>{{x.productlist}}</label><label style="padding-left: 6%;">{{x.keyword }}</label>
+							</div>
+							<div>
+							<label>Rs.</label><label>{{x.price}}</label>
+							</div></a>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</section>
+</body>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/home.css">
+  	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  	<link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<section class="headercontact">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="col-md-6">
+				</div>
+				<div class="col-md-6">
+					<div class="col-md-12">	
+						<div class="col-md-6 p1">					
+							<span class="fa fa-envelope" style="color: rgb(243, 255, 233);"></span><span class="email">NAB@100.in</span>
+						</div>
+						<div class="col-md-6 p2">					
+							<span class="fa fa-phone" style="color: rgb(243, 255, 233);"></span><span class="mob">67878768768</span>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="headernavbar" >
+		<div class="row" data-spy="affix" data-offset-top="197">
+			<div class="col-md-12">
+				<div class="col-md-2">
+					<ul style="display: flex; padding-left: 2%;">
+						<li style="list-style: none; margin: auto;"><img src="images/logo.png"></li>
+						<li style="list-style: none; margin: auto;"><h3 style="font-weight: bold;">NAB100</h3></span></li>
+					</ul>
+				</div>		
+				<div class="col-md-5">
+					<nav>
+						<ul>
+							<li><a href="#/!">Home</a></li>
+							<li><a href="">About Us</a></li>
+							<li><a href="#!product">Mens</a></li>
+							<li><a href="">Woman</a></li>
+						</ul>
+					</nav>
+				</div>	
+				<div class="col-md-5">
+					<div class="col-md-8">
+						<div class="input-group">
+						    <input type="text" class="form-control" placeholder="Search" ng-model="search">
+						    <div class="input-group-btn">
+						        <button class="btn btn-default" type="submit">
+						        	<i class="glyphicon glyphicon-search"></i>
+						        </button>
+						    </div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<a href="">
+							<div class="cartbox">
+								<i class="fa fa-shopping-cart fa-2x"></i>
+								<div class="badge">5</div>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="prodetailsec1">
+		<div class="row">
+			<div class="col-md-12 main">
+				<div class="col-md-2 main">
+					<ul>
+						<li style="padding-top: 0%;"><img src="upload/{{image1}}"></li>
+						<li><img src="upload/{{image2}}"></li>
+						<li><img src="upload/{{image3}}"></li>
+						<li><img src="upload/{{image4}}"></li>
+						<li><img src="upload/{{image5}}"></li>
+					</ul>
+				</div>
+				<div class="col-md-5 main1">
+					<img src="upload/{{image1}}">		
+				</div>
+				<div class="col-md-5 main2">
+					<h3>Product Name:- <span style="color:#5ab502;">{{productlist}}</span> </h3>
+					<h4>$ {{price}}/-</h4>
+					<p>Additional tax may apply: charged at checkout</p>
+					<hr>
+					<ul>
+						<li>100% Cotton</li>
+						<li>Cash On Delivery</li>
+						<li>Safe and Secure Payment</li>
+						<li>Best Price</li>
+					</ul>
+					<hr>
+					<h3>Select Size</h3>
+					<ul  class="size" style="list-style: none; display: flex;">
+						<a href="" class="s1"><li>S</li></a>
+						<a href="" class="s1"><li>M</li></a>
+						<a href="" class="s1"><li>L</li></a>
+						<a href="" class="s2"><li>XL</li></a>
+					</ul>
+					<hr>
+					<h3>Product Description</h3>
+					<p>{{des}}</p>
+					<button type="button" class="btn btn-success btn-lg" style="background-color: #5ab502;">
+					ADD TO CART</button>
+
+				</div>
+			</div>
+			
+			<div class="col-md-12 similar">
+				<hr>
+				<div class="col-md-1">
+					
+				</div>
+				<div class="col-md-2" ng-repeat="x in keywordData">
+					<a href=""><img src="upload/{{x.image1}}" style="width: 100%; height: 200px;">
+					<div class="brandname">
+						<label>NAB100</label>
+					</div>
+					<div class="productname">
+						<label>{{x.productlist}}</label><label style="padding-left: 6%;">{{x.keyword }}<label>
+					</div>
+					<div>
+						<label>Rs.</label><label>{{x.price}}</label>
+					</div></a>
+				</div>
+				
+				<div class="col-md-1" >
+					
+				</div>
+			</div>
+		</div>
+	</section>
+</body>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+</html>

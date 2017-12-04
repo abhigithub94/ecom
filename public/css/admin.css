@@ -1,0 +1,174 @@
+/*adminsection 1*/
+.adminsec1 .row{
+	margin: 0%;
+}
+.adminsec1 .col-md-12
+{
+	padding: 0%;
+}
+.adminsec1 .col-md-2{
+	background-color: #367fa9;
+	padding: 0%;
+	text-align: center;
+	color: white;
+}
+.adminsec1 .col-md-2 h1{
+	font-size: 22px;
+	    margin: 15px 0px;
+}
+.adminsec1 .col-md-10{
+	padding: 12px 0px;
+	background-color: #3c8dbc;
+}
+
+
+.adminsec1 .col-md-10 ul{
+	display: flex;
+	padding-left: 0px;
+	margin-bottom: 0px;
+	list-style: none;
+}
+.adminsec1 .col-md-10 ul li
+{
+	margin:auto;
+}
+.adminsec1 .col-md-10 .l1
+{
+	margin-left: 2%;
+	color: white;
+}
+.adminsec1 .col-md-10 .l2
+{
+	margin-right: 0;
+    margin-left: 74%;
+}
+.adminsec1 .col-md-10 .l3
+{
+	margin-left: 2%;
+	color: white;
+}
+.adminsec1 .col-md-10 ul img{
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+}
+
+/*adminsection 1 ends*/
+/*adminsection 2*/
+.adminsec2 .row{
+	margin: 0%;
+}
+.adminsec2 .col-md-12
+{
+	padding: 0px;
+}
+.adminsec2 .col-md-2{
+	background-color: #222d32;
+	height: -webkit-fill-available; 
+	padding: 0%;
+}
+.adminsec2 .col-md-12.inner{
+	padding-top: 6%;
+}
+.adminsec2 .col-md-4.inner img{
+	border-radius: 50%;
+}	
+.adminsec2 .col-md-8.inner{
+	color: white;
+}
+.adminsec2 .col-md-8.inner h4{
+	font-size: 16px;
+}
+.adminsec2 .col-md-12.mainlist{
+	padding-top: 10%;
+}
+.adminsec2 .col-md-12.mainlist ul{
+	color: white;
+	list-style: none;
+	padding: 0%;
+	text-align: center;
+}
+.adminsec2 .col-md-12.mainlist ul li{
+	padding: 5% 0%;
+}
+.adminsec2 .col-md-12.mainlist ul li:hover{
+	background-color: #3c8dbc;
+}
+.adminsec2 .col-md-12.mainlist ul a{
+	text-decoration: none;
+	color: white;
+}
+.adminsec2 .col-md-10{
+	background-color: #ecf0f5;
+	    height: -webkit-fill-available;
+}
+.adminsec2 .col-md-10 .col-md-12.login{
+	    padding: 0% 27%;
+}
+.adminsec2 .col-md-10 .col-md-12.loginenter{
+	    
+}
+.adminsec2 .col-md-10 .col-md-12.head{
+	    padding-top: 7%;
+	    text-align: center;
+}
+.adminsec2 .col-md-10 .col-md-12.part1{
+	    padding-top: 2%;
+}
+.adminsec2 .col-md-10 .col-md-12.part2{
+	    padding-top: 2%;
+}
+.adminsec2 .col-md-10 .col-md-12.part3{
+	    padding-top: 2%;
+}
+.adminsec2 .col-md-10 .col-md-12.part3-1{
+	    padding-top: 2%;
+}
+.adminsec2 .col-md-10 .col-md-12.part4{
+	    padding-top: 2%;
+}
+.adminsec2 .col-md-10 .col-md-12.part5{
+	    padding-top: 2%;
+}
+.adminsec2 .col-md-10 .col-md-12.part6{
+	    padding-top: 2%;
+}
+.adminsec2 .col-md-10 .col-md-12.part7{
+	    padding-top: 2%;
+}
+.adminsec2 .col-md-10 .col-md-12.part8{
+	    padding-top: 2%;
+}
+.adminsec2 .col-md-10 .col-md-12.part9{
+	    padding-top: 2%;
+}
+.adminsec2 .col-md-10 .col-md-12.part10{
+	    padding-top: 2%;
+	    text-align: center;
+}
+.adminsec2 {
+	height: 800px;
+	overflow-y: scroll; 
+}
+.adminsec2 .col-md-12.uploadpdf{
+	padding-top: 2%;
+}
+.adminsec2 .col-md-12.questiontext, .col-md-12.txt1, .col-md-12.txt2, .col-md-12.txt3, .col-md-12.txt4, .col-md-12.txt5{
+	padding-bottom: 2%;
+}
+.adminsec2 .col-md-12.txtsub{
+	padding-bottom: 2%;
+	padding-right: 74%;
+}
+.adminsec2 .col-md-12.loginenter{
+	padding-top: 2%;
+}
+.adminsec2 .p1{
+	display: block;
+}
+.adminsec2 .p2, .p3, .p4, .p5{
+	display: none;
+}
+
+/*adminsection 2 ends*/
+
